@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  script:
+    build:
+      context: ./
+    command:
+      - /bin/sh
+    volumes:
+      - ./app:/home/docker/
+    working_dir: /home/docker/

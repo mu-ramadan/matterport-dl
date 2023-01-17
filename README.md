@@ -10,6 +10,9 @@ A tool to download/archive [Matterport](https://matterport.com) virtual tours.  
 4. Archive a virtual tour by running `matterport-dl.py [url_or_page_id]`, you may need to use `python3 matterport-dl.py ...` or `python matterport-dl.py ...` instead.
 5. Revisit an archived virtual tour by running `matterport-dl.py [url_or_page_id] 127.0.0.1 8080` and visiting http://127.0.0.1:8080 in a browser.
 
+# Docker
+- docker compose run --rm script
+
 # Advanced Options
 -   Add `--proxy 127.0.0.1:1234` to a download run to use a proxy for requests
 -   Add `--advanced-download` to a download run to try and download the needed textures and files for supporting dollhouse/floorplan views.  NOTE: Must use built in webserver to host content for this to work.

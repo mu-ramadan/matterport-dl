@@ -3,6 +3,11 @@
 
 # But not these files...
 !.gitignore
-!matterport-dl.py
-!/graph_posts
-
+!/app/matterport-dl.py
+!/app/graph_posts/*
+!**/app
+!**/app/graph_posts
+!docker-compose.yml
+!Dockerfile
+!requirements.txt
+!README.md
