@@ -608,7 +608,7 @@ class OurSimpleHTTPRequestHandler(SimpleHTTPRequestHandler):
     def do_POST(self):
         post_msg = None
         try:
-            if self.path == "/api/mp/models/graph":
+            if urlparse(self.path).path == "/api/mp/models/graph":
                 self.send_response(200)
                 self.end_headers()
                 content_len = int(self.headers.get('content-length'))
